@@ -12,8 +12,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yogaliu.oschina.io/blog
-root: /blog/
+url: https://yogaliu.github.io/blog/
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -63,11 +63,11 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: jacman
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
   type: git
-  repo: https://git.oschina.net/yogaliu/blog.git
+  repo: https://github.com/yogaliu/blog.git
   bransh: master
