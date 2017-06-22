@@ -99,7 +99,7 @@
 <meta property="og:url" content="https://yogaliu.github.io/blog/2017/06/22/Map和Set/index.html">
 <meta property="og:site_name" content="Yoga">
 <meta property="og:description" content="Map   Map是一组键值对的结构，具有极快的查找速度。    初始化Map需要一个二维数组    var m=new Map([[“Micheal”,95],[“Bob”,80],[“Tracy”,88]])    或者直接定义一个空Map。Map具有以下方法: 12345var m=new Map()m.set(&amp;quot;Bob&amp;quot;,80) //填加一个新key-valuem.ha">
-<meta property="og:updated_time" content="2017-06-22T08:15:55.907Z">
+<meta property="og:updated_time" content="2017-06-22T09:24:35.447Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Map和Set数据类型">
 <meta name="twitter:description" content="Map   Map是一组键值对的结构，具有极快的查找速度。    初始化Map需要一个二维数组    var m=new Map([[“Micheal”,95],[“Bob”,80],[“Tracy”,88]])    或者直接定义一个空Map。Map具有以下方法: 12345var m=new Map()m.set(&amp;quot;Bob&amp;quot;,80) //填加一个新key-valuem.ha">
@@ -325,7 +325,9 @@
 <p>   或者直接定义一个空Map。Map具有以下方法:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var m=new Map()</div><div class="line">m.set(&quot;Bob&quot;,80) //填加一个新key-value</div><div class="line">m.has(&quot;Bob&quot;) //查找key是否存在，返回一个布尔值</div><div class="line">m.get(&quot;Bob&quot;) //返回key值,不存在则返回undefined</div><div class="line">m.delete(&quot;Bob&quot;) //删除key,直接删除掉,不会留下undefined</div></pre></td></tr></table></figure>
 <p>一个key值只对应一个value,新设置的value会顶掉以前的value值</p>
-<h2 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h2><p>Set是一组key值,没有value.key值不能重复</p>
+<h2 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h2><p>Set是一组key值,没有value.key值不能重复，重复元素在Set中自动被过滤：</p>
+<p>通过<code>delete(key)</code>方法可以删除元素：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var s = new Set([1, 2, 3]);</div><div class="line"></div><div class="line">s.delete(3);//Set&#123;1,2&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
